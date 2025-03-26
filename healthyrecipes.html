@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Times New Roman'; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1">  &lt;meta charset="UTF-8" /&gt;</span></p>
+<p class="p1"><span class="s1">  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt;</span></p>
+<p class="p1"><span class="s1">  &lt;title&gt;Fun Plant-Based Quiz&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1">  &lt;style&gt;</span></p>
+<p class="p1"><span class="s1">    body {</span></p>
+<p class="p1"><span class="s1">      font-family: "Comic Sans MS", cursive, sans-serif;</span></p>
+<p class="p1"><span class="s1">      background-color: #fffdf5;</span></p>
+<p class="p1"><span class="s1">      padding: 20px;</span></p>
+<p class="p1"><span class="s1">      color: #333;</span></p>
+<p class="p1"><span class="s1">    }</span></p>
+<p class="p1"><span class="s1">    h2 {</span></p>
+<p class="p1"><span class="s1">      color: #4CAF50;</span></p>
+<p class="p1"><span class="s1">      text-align: center;</span></p>
+<p class="p1"><span class="s1">    }</span></p>
+<p class="p1"><span class="s1">    .quiz-container {</span></p>
+<p class="p1"><span class="s1">      max-width: 750px;</span></p>
+<p class="p1"><span class="s1">      margin: auto;</span></p>
+<p class="p1"><span class="s1">      background: #fefefe;</span></p>
+<p class="p1"><span class="s1">      padding: 20px;</span></p>
+<p class="p1"><span class="s1">      border-radius: 16px;</span></p>
+<p class="p1"><span class="s1">      box-shadow: 0 2px 12px rgba(0,0,0,0.1);</span></p>
+<p class="p1"><span class="s1">      border: 3px dashed #c0e4c1;</span></p>
+<p class="p1"><span class="s1">    }</span></p>
+<p class="p1"><span class="s1">    .question {</span></p>
+<p class="p1"><span class="s1">      margin-bottom: 25px;</span></p>
+<p class="p1"><span class="s1">      background-color: #f9fff9;</span></p>
+<p class="p1"><span class="s1">      border-left: 6px solid #9ddba1;</span></p>
+<p class="p1"><span class="s1">      padding: 10px 15px;</span></p>
+<p class="p1"><span class="s1">      border-radius: 10px;</span></p>
+<p class="p1"><span class="s1">    }</span></p>
+<p class="p1"><span class="s1">    .question p {</span></p>
+<p class="p1"><span class="s1">      font-size: 18px;</span></p>
+<p class="p1"><span class="s1">      font-weight: bold;</span></p>
+<p class="p1"><span class="s1">    }</span></p>
+<p class="p1"><span class="s1">    .answers label {</span></p>
+<p class="p1"><span class="s1">      display: block;</span></p>
+<p class="p1"><span class="s1">      margin: 6px 0;</span></p>
+<p class="p1"><span class="s1">      cursor: pointer;</span></p>
+<p class="p1"><span class="s1">      font-size: 16px;</span></p>
+<p class="p1"><span class="s1">    }</span></p>
+<p class="p1"><span class="s1">    button {</span></p>
+<p class="p1"><span class="s1">      background-color: #4CAF50;</span></p>
+<p class="p1"><span class="s1">      color: white;</span></p>
+<p class="p1"><span class="s1">      padding: 12px 24px;</span></p>
+<p class="p1"><span class="s1">      border: none;</span></p>
+<p class="p1"><span class="s1">      border-radius: 10px;</span></p>
+<p class="p1"><span class="s1">      cursor: pointer;</span></p>
+<p class="p1"><span class="s1">      font-size: 18px;</span></p>
+<p class="p1"><span class="s1">      display: block;</span></p>
+<p class="p1"><span class="s1">      margin: 0 auto;</span></p>
+<p class="p1"><span class="s1">    }</span></p>
+<p class="p1"><span class="s1">    button:hover {</span></p>
+<p class="p1"><span class="s1">      background-color: #3a9e3d;</span></p>
+<p class="p1"><span class="s1">    }</span></p>
+<p class="p1"><span class="s1">    #result {</span></p>
+<p class="p1"><span class="s1">      font-size: 20px;</span></p>
+<p class="p1"><span class="s1">      margin-top: 20px;</span></p>
+<p class="p1"><span class="s1">      font-weight: bold;</span></p>
+<p class="p1"><span class="s1">      color: #4CAF50;</span></p>
+<p class="p1"><span class="s1">      text-align: center;</span></p>
+<p class="p1"><span class="s1">    }</span></p>
+<p class="p1"><span class="s1">  &lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">  &lt;div class="quiz-container"&gt;</span></p>
+<p class="p1"><span class="s1">    &lt;h2&gt;🌱 Fun Quiz: What Do You Know About Plant-Based Eating?&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1">    &lt;form id="quizForm"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">      &lt;div class="question"&gt;</span></p>
+<p class="p1"><span class="s1">        &lt;p&gt;1️⃣ What does a 🥦 vegan diet exclude?&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">        &lt;div class="answers"&gt;</span></p>
+<p class="p1"><span class="s1">          &lt;label&gt;&lt;input type="radio" name="q1" value="0" required&gt; 🍗 Only meat&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1">          &lt;label&gt;&lt;input type="radio" name="q1" value="0"&gt; 🧀 Meat and dairy&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1">          &lt;label&gt;&lt;input type="radio" name="q1" value="1"&gt; 🥛🥚 All animal products&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1">        &lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">      &lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">      &lt;div class="question"&gt;</span></p>
+<p class="p1"><span class="s1">        &lt;p&gt;2️⃣ Which of these foods gives you plant-based protein?&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">        &lt;div class="answers"&gt;</span></p>
+<p class="p1"><span class="s1">          &lt;label&gt;&lt;input type="radio" name="q2" value="0" required&gt; 🍗 Chicken&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1">          &lt;label&gt;&lt;input type="radio" name="q2" value="1"&gt; 🥣 Lentils&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1">          &lt;label&gt;&lt;input type="radio" name="q2" value="0"&gt; 🧈 Butter&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1">        &lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">      &lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">      &lt;div class="question"&gt;</span></p>
+<p class="p1"><span class="s1">        &lt;p&gt;3️⃣ What vitamin do vegans usually take as a supplement?&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">        &lt;div class="answers"&gt;</span></p>
+<p class="p1"><span class="s1">          &lt;label&gt;&lt;input type="radio" name="q3" value="0" required&gt; 🍊 Vitamin C&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1">          &lt;label&gt;&lt;input type="radio" name="q3" value="1"&gt; 💊 Vitamin B12&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1">          &lt;label&gt;&lt;input type="radio" name="q3" value="0"&gt; 🥕 Vitamin A&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1">        &lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">      &lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">      &lt;div class="question"&gt;</span></p>
+<p class="p1"><span class="s1">        &lt;p&gt;4️⃣ Why is iron 🧲 important for children?&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">        &lt;div class="answers"&gt;</span></p>
+<p class="p1"><span class="s1">          &lt;label&gt;&lt;input type="radio" name="q4" value="0" required&gt; 😴 It helps you sleep&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1">          &lt;label&gt;&lt;input type="radio" name="q4" value="1"&gt; 💨 It carries oxygen in the blood&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1">          &lt;label&gt;&lt;input type="radio" name="q4" value="0"&gt; 🦷 It keeps teeth strong&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1">        &lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">      &lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">      &lt;div class="question"&gt;</span></p>
+<p class="p1"><span class="s1">        &lt;p&gt;5️⃣ What food helps your body absorb more iron?&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">        &lt;div class="answers"&gt;</span></p>
+<p class="p1"><span class="s1">          &lt;label&gt;&lt;input type="radio" name="q5" value="0" required&gt; 🧀 Cheese&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1">          &lt;label&gt;&lt;input type="radio" name="q5" value="1"&gt; 🍊 Oranges&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1">          &lt;label&gt;&lt;input type="radio" name="q5" value="0"&gt; 🍚 Rice&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1">        &lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">      &lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">      &lt;div class="question"&gt;</span></p>
+<p class="p1"><span class="s1">        &lt;p&gt;6️⃣ True or False: A well-planned vegan diet can be healthy for kids 🧒👧&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">        &lt;div class="answers"&gt;</span></p>
+<p class="p1"><span class="s1">          &lt;label&gt;&lt;input type="radio" name="q6" value="1" required&gt; ✅ True&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1">          &lt;label&gt;&lt;input type="radio" name="q6" value="0"&gt; ❌ False&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1">        &lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">      &lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">      &lt;button type="submit"&gt;✨ Check My Answers!&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1">    &lt;/form&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">    &lt;div id="result"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">  &lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">  &lt;script&gt;</span></p>
+<p class="p1"><span class="s1">    const form = document.getElementById('quizForm');</span></p>
+<p class="p1"><span class="s1">    const result = document.getElementById('result');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">    form.addEventListener('submit', function(e) {</span></p>
+<p class="p1"><span class="s1">      e.preventDefault();</span></p>
+<p class="p1"><span class="s1">      const formData = new FormData(form);</span></p>
+<p class="p1"><span class="s1">      let score = 0;</span></p>
+<p class="p1"><span class="s1">      for (let [key, value] of formData.entries()) {</span></p>
+<p class="p1"><span class="s1">        score += parseInt(value);</span></p>
+<p class="p1"><span class="s1">      }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">      result.textContent = `🎉 You scored ${score} out of 6! Great job!`;</span></p>
+<p class="p1"><span class="s1">    });</span></p>
+<p class="p1"><span class="s1">  &lt;/script&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
